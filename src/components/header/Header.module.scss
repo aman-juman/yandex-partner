@@ -1,0 +1,128 @@
+@import "../../styles/variables";
+@import "../../styles/globals";
+
+.header {
+  background-color: $main;
+  width: 100%;
+  /*start CONTENT*/
+  .content {
+    display: flex;
+    //position: sticky;
+    align-items: center;
+    height: 100px;
+    justify-content: space-between;
+    padding: 0 10px;
+    /*start LOGO*/
+    .logo {
+      font-size: 40px;
+      font-weight: bold;
+      color: $red;
+      cursor: pointer;
+      margin-right: 20px;
+
+      span {
+        color: $black;
+      }
+    }
+    /*end LOGO*/
+    .burgerMenu{
+      display: block;
+      //background-color: #ff9805;
+      @include medium{
+        display: block;
+      }
+    }
+    /*end CONTENT*/
+    /*start NAV*/
+    .nav {
+      flex: 2;
+      @include medium{
+        display: none;
+      }
+      .navList {
+        font-size: 18px;
+        font-weight: bold;
+        color: $black;
+        display: flex;
+        width: 300px;
+        justify-content: space-between;
+
+        .navItem {
+          list-style: none;
+          cursor: pointer;
+          &:hover{
+            opacity: 0.7;
+          }
+        }
+      }
+    }
+    /*end NAV*/
+    /*start SOCIALS*/
+    .socials{
+      @include medium{
+        display: none;
+      }
+      .socialList {
+        display: flex;
+        flex-direction: row;
+        width: 200px;
+        justify-content: space-between;
+        .socialWrap {
+          display: table;
+          i {
+            cursor: pointer;
+            display: table-cell;
+            vertical-align: middle;
+            text-align: center;
+            font-size: 20px;
+            border: 2px solid $black;
+            padding: 10px;
+            height: 20px;
+            width: 20px;
+            border-radius: 50%;
+            transition: all 0.4s ease-in-out;
+            &:hover{
+              transform: scale(1.1);
+            }
+          }
+        }
+      }
+    }
+    /*end SOCIALS*/
+  }
+  /*end CONTENT*/
+  /*start TYPES*/
+  .types{
+    display: flex;
+    border-top: 5px solid $blackLight;
+
+    @include medium{
+      flex-wrap: wrap;
+    }
+
+    div{
+      &:hover{
+        background-color: rgba(0,0,0,1)
+      }
+      img{
+        display: block;
+        object-fit: cover;
+        cursor: pointer;
+        width: calc(100vw/6);
+        height: calc(100vw/6/3.5);
+
+        @include medium{
+          width: calc(100vw/2);
+          height: calc(100vw/2/3.5);
+        }
+
+        &:hover{
+          opacity: 0.6;
+        }
+      }
+    }
+
+  }
+  /*end TYPES*/
+
+}

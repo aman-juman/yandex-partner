@@ -1,0 +1,78 @@
+@import "../../styles/variables";
+@import "../../styles/globals";
+.wrap{
+  background-image: url("img/background.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  padding-top: 50px;
+  @include medium{
+    background-position: left;
+  }
+}
+.content{
+  display: flex;
+  flex-direction: column;
+  .headline{
+    font-size: 40px;
+    color: $black;
+    @include medium{
+      text-align: center;
+    }
+    @include mobile{
+      font-size: 24px;
+    }
+   span{
+    color: $red;
+     margin: 0 5px;
+   }
+  }
+
+  .row{
+    display: flex;
+    justify-content: space-between;
+    margin: 50px 0;
+
+    @include medium{
+      flex-direction: column;
+      align-items: center;
+    }
+    .point{
+      display: flex;
+      align-items: center;
+      @include medium{
+        margin: 10px;
+      }
+      .number{
+        box-sizing: border-box;
+        width: 60px;
+        height: 60px;
+        background-color: $main;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: $white;
+        font-size: 28px;
+        font-weight: bold;
+        transition: all ease-in 0.4s;
+        cursor: pointer;
+        &:hover{
+          transform: scale(1.2);
+          color: $black;
+        }
+
+      }
+      .title{
+        font-size: 16px;
+        font-weight: bold;
+        margin: 0 10px;
+        width: 100px;
+
+      }
+    }
+  }
+
+}

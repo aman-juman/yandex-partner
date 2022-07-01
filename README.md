@@ -1,0 +1,1 @@
+Ya Office - Yandex partner

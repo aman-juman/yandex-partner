@@ -1,0 +1,90 @@
+@import "../../styles/variables";
+@import "../../styles/globals";
+
+.wrap {
+  background-color: $main;
+  background-image: url("taxi.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right;
+}
+.wrap1 {
+  background-color: $main;
+  background-image: url("cargo.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right;
+}
+
+.wrap2 {
+  background-color: $main;
+  background-image: url("courier.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right;
+}
+//.wrap {
+//  background-color: $main;
+//  background-image: url("taxi.jpg");
+//  background-repeat: no-repeat;
+//  background-size: cover;
+//  background-position: right;
+//}
+.right{
+  display: flex;
+  justify-content: flex-end;
+}
+.content {
+  padding: 100px 10px 0;
+  height: 600px;
+  max-width: 700px;
+  display: flex;
+  flex-direction: column;
+
+  h3{
+    font-size: 50px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 0;
+    line-height: 1.2;
+
+    @include medium{
+      font-size: 40px;
+    }
+
+    @include mobile{
+      font-size: 24px;
+
+    }
+
+    span{
+      color: $red;
+    }
+  }
+  h5{
+    font-size: 20px;
+    font-weight: bold;
+    margin: 20px 0;
+
+  }
+}
+
+.submit{
+  margin-top: 20px;
+  width: 320px;
+  height: 50px;
+  background-color: $blackLight;
+  border: none;
+  border-radius: 3px;
+  color: $white;
+  font-size: 20px;
+  letter-spacing: 1px;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+
+  &:hover{
+    opacity: 0.9;
+  }
+
+}

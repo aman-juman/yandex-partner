@@ -1,0 +1,43 @@
+@import "../../styles/variables";
+@import "../../styles/globals";
+.wrap{
+  display: flex;
+  align-items: center;
+  padding: 20px 10px;
+
+  @include medium{
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .title{
+    font-size: 50px;
+    margin: 0;
+
+    @include medium{
+      font-size: 40px;
+      margin-bottom: 20px;
+    }
+    @include mobile{
+      font-size: 24px;
+    }
+
+  }
+  .button{
+    cursor: pointer;
+    margin: 0 30px;
+    width: 250px;
+    height: 50px;
+    background-color: $redLight;
+    border: none;
+    border-radius: 5px;
+    color: $white;
+    font-size: 20px;
+    font-weight: bold;
+
+    &:hover{
+      opacity: 0.7;
+    }
+  }
+
+}

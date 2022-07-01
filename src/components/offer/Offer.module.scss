@@ -1,0 +1,219 @@
+@import "../../styles/variables";
+@import "../../styles/globals";
+
+.wrap{
+
+
+}
+.headline{
+  font-size: 35px;
+  text-align: center;
+  padding: 50px 0;
+}
+.content{
+  background-color: $main;
+  border-top-left-radius: 150px;
+  border-bottom-right-radius: 130px;
+  text-align: center;
+  //height: 300px;
+
+  /*START DESCRIPTION*/
+ .description{
+   margin-left: 50px;
+   background-image: url("./img/mobile.png");
+   background-repeat: no-repeat;
+   background-size: contain;
+   background-position: right;
+
+   @include medium{
+     background-image: none;
+   }
+
+   .row{
+     display: flex;
+     align-items: center;
+     @include medium{
+       flex-direction: column;
+     }
+
+   }
+   .item{
+     display: flex;
+     align-items: center;
+     width: 300px;
+     .title{
+       font-size: 20px;
+       color: $blackLight;
+     }
+     .icon{
+       width: 50px;
+       height: 50px;
+       margin: 20px;
+       transition: all 0.4s ease-in;
+
+       &:hover{
+         transform: scale(1.2);
+       }
+     }
+   }
+ }
+  /*END DESCRIPTION*/
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//.wrap{
+//  background-image: url("./taxi.jpg");
+//  background-repeat: no-repeat;
+//  background-position: center;
+//  background-size: cover;
+//}
+//.content{
+//  margin: 0 auto;
+//  width: 1150px;
+//  display: flex;
+//  flex-direction: column;
+//  align-items: center;
+//  justify-content: center;
+//}
+//
+//.titleWrap{
+//
+//  .title{
+//    display: inline-block;
+//    font-size: 50px;
+//    font-weight: bold;
+//  }
+//  .red{
+//    color: red;
+//    margin-right: 10px;
+//  }
+//}
+//
+//.list{
+//  display: flex;
+//  justify-content: space-between;
+//  align-items: center;
+//  width: 800px;
+//  margin-bottom: 50px;
+//
+//  .listItem{
+//    font-size: 16px;
+//    font-weight: normal;
+//    text-transform: uppercase;
+//    color: $white;
+//    cursor: pointer;
+//    background-color: transparent;
+//    border: 1px solid transparent;
+//    padding: 5px 10px;
+//
+//    &:hover{
+//
+//      border: 1px solid $yellowLight;
+//    }
+//  }
+//}
+//
+//.listIcons{
+//  display: flex;
+//  width: 800px;
+//
+//  .iconWrapper{
+//    width: 300px;
+//    display: flex;
+//    flex-direction: column;
+//    align-items: center;
+//    i{
+//      border: 5px solid $white;
+//      padding: 30px;
+//      border-radius: 50%;
+//      color: $white;
+//      background-color: $yellow;
+//      font-size: 45px;
+//      font-weight: bold;
+//      width: 60px;
+//      height: 60px;
+//      display: table-cell;
+//      vertical-align: middle;
+//      text-align: center;
+//      transition: 0.3s ease-in-out;
+//      &:hover{
+//        background-color: rgba(0,0,0,0.4);
+//      }
+//    }
+//    .cityTitle{
+//      margin-top: 20px;
+//        font-size: 18px;
+//      font-weight: bold;
+//      color: $white;
+//      text-align: center;
+//    }
+//  }
+//}
+//.register{
+//  font-size: 16px;
+//  font-weight: bold;
+//  color: $white;
+//  cursor: pointer;
+//  background-color: transparent;
+//  border: 2px solid $yellowLight;
+//  padding: 10px 15px;
+//
+//  margin-bottom: 50px;
+//  &:hover{
+//    background-color: $yellowLight;
+//  }
+//}
